@@ -1,0 +1,48 @@
+Starting on 3-6 at 21:11:14
+
+Question q4
+===========
+
+*** FAIL: Exception raised: 'float' object is not iterable
+*** 
+*** Traceback (most recent call last):
+***   File "/Users/sudhasinha/cs188/reinforcement/grading.py", line 71, in grade
+***     util.TimeoutFunction(getattr(gradingModule, q),300)(self) # Call the question's function
+***   File "/Users/sudhasinha/cs188/reinforcement/util.py", line 608, in __call__
+***     result = self.function(*args, **keyArgs)
+***   File "autograder.py", line 268, in <lambda>
+***     return lambda grades: question.execute(grades)
+***   File "/Users/sudhasinha/cs188/reinforcement/testClasses.py", line 49, in execute
+***     if not f(grades):
+***   File "autograder.py", line 263, in <lambda>
+***     return lambda grades: testCase.execute(grades, moduleDict, solutionDict)
+***   File "reinforcementTestClasses.py", line 387, in execute
+***     testPass, stdOutString, fileOutString = self.executeNExperiences(grades, moduleDict, solutionDict, n, checkValuesAndPolicy)
+***   File "reinforcementTestClasses.py", line 400, in executeNExperiences
+***     valuesPretty, qValuesPretty, actions, policyPretty, lastExperience = self.runAgent(moduleDict, n)
+***   File "reinforcementTestClasses.py", line 466, in runAgent
+***     values[state] = agent.computeValueFromQValues(state)
+***   File "qlearningAgents.py", line 70, in computeValueFromQValues
+***     return max(self.getQValue(state,action))
+*** TypeError: 'float' object is not iterable
+*** 
+
+### Question q4: 0/5 ###
+
+
+Finished at 21:11:14
+
+Provisional grades
+==================
+Question q4: 0/5
+------------------
+Total: 0/5
+
+Your grades are NOT yet registered.  To register your grades you must
+submit your files to the edX website.  The grades obtained through the
+edX website are your final grades unless your submission was not in
+the spirit of the course,  such as if your submission simply hardcoded
+the answers to the tests.   We will screen for this after the deadline.
+
+*If you worked with a partner, you must both submit separately.*
+
